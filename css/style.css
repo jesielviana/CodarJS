@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 16px;
+    width: 90%;
+}
+
+.input-output{
+    border: 1px solid #ddd;
+    width:100%; 
+    font-size: 16px;
+    background: #eee;
+}
+
+.sucesso{
+    border: 1px solid green;
+    background: rgba(76, 175, 80, 0.1);
+}
+
+.erro{
+    border: 1px solid red;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+button{
+    padding: 10px;
+    background: #E3C70E;
+    font-size: 20px;
+    margin-top: 5px;
+    border: 1px solid  #eee;
+}
+
+h4{
+    margin-bottom: 0px; 
+}
+
+.txt-centro{
+    text-align: center;
+}
+
+.menu{
+    float: right;
+    margin: 5px 0;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.CodeMirror {
+    height: auto;
+    min-height: 150px;
+    border: 1px solid #ddd;
+    width: 102%;
+}
+
+.CodeMirror-scroll {
+    max-height: 200px;
+}
+
+.CodeMirror pre {
+    padding-left: 7px;
+    line-height: 1.25;
+}
+
+
+#columns {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.column {
+    display: inline-block;
+    border: 1px solid #eee;
+    background-color: #009688;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: move;
+    color: #ffffff;
+}
+
+.column.over {
+    border: 2px dashed #000;
+}
+
