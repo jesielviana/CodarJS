@@ -88,9 +88,7 @@ footer{
     display: inline-block;
     border: 1px solid #eee;
     background-color: #009688;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 5px;
+    margin:2px -5px;
     padding: 10px 20px;
     text-align: center;
     cursor: move;
