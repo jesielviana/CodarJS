@@ -1,7 +1,5 @@
 (function () {
     'use strict';
-    const prefixo = 'CODAR ';
-
     var makeTextFile = function (text) {
         var textFile = null;
         var data = new Blob([text], { type: 'text/js' });
@@ -96,8 +94,6 @@
         }
         elemento.className = classes.join(' ');
     }
-
-
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker

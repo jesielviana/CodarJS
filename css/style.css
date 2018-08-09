@@ -5,10 +5,18 @@
 
 body{
     font-family: 'Courier New', Courier, monospace;
-    margin: 0 auto;
-    max-width: 700px;
     font-size: 16px;
-    width: 90%;
+    width: 100%;
+    margin: 0;
+}
+
+
+main{
+    max-width: 700px;
+    width: 90%; 
+    margin-top: 65px;
+    margin-bottom: auto;
+    padding: 10px 0;
 }
 
 .input-output{
@@ -36,18 +44,15 @@ button{
     border: 1px solid  #eee;
 }
 
-h4{
-    margin-bottom: 0px; 
-}
 
 .txt-centro{
     text-align: center;
 }
 
-.menu{
-    float: right;
-    margin: 5px 0;
+.icone{
+    vertical-align: bottom;
 }
+
 
 footer{
     clear: both;
@@ -96,3 +101,61 @@ footer{
     border: 2px dashed #000;
 }
 
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #E3C70E;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    bottom: auto;
+    left: 0;
+    right: 0;
+    width: 100%; /* Full width */
+    height: 60px;
+    z-index: 9999;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    width: 50%;
+    font-weight: 700;
+    height: 60px;
+
+}
+
+.navbar a:first-child { 
+    border-right: 1px solid #eee;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #efd428;
+    color: black;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media(max-width: 600px){
+    .navbar {
+        position: fixed; /* Set the navbar to fixed position */
+        bottom: 0; /* Position the navbar at the bottom of the page */
+        width: 100%; /* Full width */
+        top: auto;
+    }
+
+    main {
+        margin-top: auto;
+        margin-bottom: 65px;
+    }
+}

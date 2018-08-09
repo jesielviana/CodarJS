@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,6 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <link rel="manifest" href="/manifest.json">
-
     <meta name="theme-color" content="#E3C70E">
     <!-- Add to home screen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -23,46 +23,46 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
 
-
-    <script src="codemirror/lib/codemirror.js"></script>
-    <script src="codemirror/mode/javascript/javascript.js"></script>
-    <!-- Insert link to stylesheet here -->
-    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
-    <link rel="stylesheet" href="codemirror/theme/material.css">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/min/styles.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <h4>Digite seu código Javascript abaixo:</h4>
 
-    <form style="position: relative; margin-top: .5em;">
-        <textarea id="demotext" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">function ola(){
+    <div class="navbar">
+        <a href="#"> <img class="icone" src="images/code.svg"> Código</a>
+        <a href="codar.html"> <img class="icone" src="images/drag.svg"> Blocos</a>
+    </div>
+
+    <main>
+        <form style="position: relative; margin-top: .5em;">
+            <label for="codeinput">Digite seu código Javascript abaixo:</label>
+            <textarea id="codeinput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">function ola(){
     console.log('Olá mundo!');
 }
 ola();
      </textarea>
-        <div class="txt-centro">
-            <button id="exec" type="button">Executar</button>
-        </div>
-    </form>
-    <script>
-        var editor = CodeMirror.fromTextArea(document.getElementById("demotext"), {
-            lineNumbers: true,
-            mode: "javascript",
-            matchBrackets: true,
-            theme: 'material',
-            tabSize: 2
-        });
-    </script>
+            <div class="txt-centro">
+                <button id="exec" type="button">Executar</button>
+            </div>
+        </form>
+        <label for="saida">Saída</label>
+        <textarea class="input-output" readonly id="saida" rows="5"></textarea>
 
-    <h4>Saída:</h4>
-    <textarea class="input-output" readonly id="saida" rows="5"></textarea>
-    <a class="menu" href="codar.html">CodarJS Montando Código</a>
-    <footer>
-        <p>Copyright &copy; Jesiel Viana. All rights reserved.
-            <p>
-    </footer>
+        <footer>
+            <p>Copyright &copy; Jesiel Viana. All rights reserved.
+                <p>
+        </footer>
+    </main>
 </body>
-<script src="js/app.js"></script>
+<script src="js/min/script.min.js"></script>
+<script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("codeinput"), {
+        lineNumbers: true,
+        mode: "javascript",
+        matchBrackets: false,
+        theme: 'eclipse',
+        tabSize: 2
+    });
+</script>
 
 </html>

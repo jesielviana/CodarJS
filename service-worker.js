@@ -3,14 +3,8 @@ const filesToCache = [
   '/',
   '/index.html',
   '/codar.html',
-  '/js/app.js',
-  '/js/dragDrop.js',
-  '/js/dragDropTouch.js',
-  '/css/style.css',
-  'codemirror/lib/codemirror.js',
-  'codemirror/mode/javascript/javascript.js',
-  'codemirror/lib/codemirror.css',
-  'codemirror/theme/material.css'
+  '/js/script.min.js',
+  '/css/styles.min.css',
 ];
 
 self.addEventListener('install', function (e) {
