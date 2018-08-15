@@ -3,15 +3,15 @@ const filesToCache = [
   '/',
   '/index.html',
   '/codar.html',
-  '/js/script.min.js',
-  '/css/styles.min.css',
+  '/js/min/script.min.js',
+  '/css/min/styles.min.css',
 ];
 
 self.addEventListener('install', function (e) {
   // console.log('[ServiceWorker] Install');
   e.waitUntil(
     caches.open(cacheName).then(function (cache) {
-      // console.log('[ServiceWorker] Caching app shell');
+      // console.log('[ServiceWorker] Caching app shelssl');
       return cache.addAll(filesToCache);
     })
   );
