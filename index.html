@@ -8,11 +8,13 @@
     <meta name="description" content="CodarJS">
     <title>CodarJS</title>
 
-    <link rel="icon" href="favicon.ico">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="icon" sizes="192x192" href="/images/icons/icon-192x192.png">
     <link rel="shortcut icon" href="favicon.ico">
 
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#E3C70E">
+    <meta name="theme-color" content="#f0db4f">
     <!-- Add to home screen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -23,14 +25,14 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
 
-    <link href="css/min/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/min/styles.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
     <div class="navbar">
-        <a href="#"> <img class="icone" src="images/code.svg"> Código</a>
-        <a href="codar.html"> <img class="icone" src="images/drag.svg"> Blocos</a>
+        <a href="#"> <img class="icone" src="/images/code.svg"> Código</a>
+        <a href="codar.html"> <img class="icone" src="/images/drag.svg"> Blocos</a>
     </div>
 
     <main>
@@ -54,7 +56,7 @@ ola();
         </footer>
     </main>
 </body>
-<script src="js/min/script.min.js"></script>
+<script src="/js/min/script.min.js"></script>
 <script>
     var editor = CodeMirror.fromTextArea(document.getElementById("codeinput"), {
         lineNumbers: true,

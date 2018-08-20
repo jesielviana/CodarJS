@@ -38,7 +38,7 @@ main{
 
 button{
     padding: 10px;
-    background: #E3C70E;
+    background: #f0db4f;
     font-size: 20px;
     margin-top: 5px;
     border: 1px solid  #eee;
@@ -103,7 +103,7 @@ footer{
 /* The navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #E3C70E;
+    background-color: #f0db4f;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     bottom: auto;

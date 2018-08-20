@@ -1,6 +1,12 @@
 {
     "name": "CodarJS",
     "short_name": "Codar",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#f0db4f",
+    "theme_color": "#f0db4f",
+    "prompt_message": "Add Codar to Home screen",
     "icons": [{
         "src": "/images/icons/icon-48x48.png",
         "sizes": "48x48",
@@ -29,9 +35,5 @@
         "src": "/images/icons/icon-512x512.png",
         "sizes": "512x512",
         "type": "image/png"
-      }],
-    "start_url": "/index.html",
-    "display": "standalone",
-    "background_color": "#E3C70E",
-    "theme_color": "#E3C70E"
+      }]
   }
