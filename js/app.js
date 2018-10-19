@@ -10,9 +10,9 @@
         return textFile;
     }
 
-    let executa = function(entrada){
+    let executa = function (entrada) {
         document.getElementById("saida").value = '';
-        
+
         console.stdlog = console.log.bind(console);
         console.logs = [];
         console.log = function () {
@@ -43,7 +43,7 @@
         }
     }
 
-    try{
+    try {
         document.getElementById('exec').addEventListener('click', function () {
             let code = editor.getValue();
             executa(code);
@@ -58,8 +58,6 @@
             executa(code);
         });
     }
-
-
 
     var appendScripts = function (src) {
         if (src) {
@@ -99,9 +97,14 @@
         navigator.serviceWorker
             .register('/service-worker.js')
             .then(function () {
-                // console.log('Service Worker Registered');
+                console.log('Service Worker Registrado!');
             });
     }
 
 })();
+
+navigator.serviceWorker.register('/service-worker.js')
+.then(function () {
+        console.log('Service Worker Registrado!');
+});
 
