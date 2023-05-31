@@ -1,10 +1,10 @@
 const cacheName = 'codar-v1';
 const filesToCache = [
-  '/',
-  '/index.html',
-  '/codar.html',
-  '/js/min/script.min.js',
-  '/css/min/styles.min.css',
+  '/codarjs/',
+  'index.html',
+  'codar.html',
+  'js/min/script.min.js',
+  'css/min/styles.min.css',
 ];
 
 self.addEventListener('install', function (e) {
